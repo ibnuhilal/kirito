@@ -18,8 +18,8 @@ build:
   stage: build
   script:
     - docker build -t ibnuhilal/kirito:latest .
-    - docker login -u ibnuhilaluser -p ibnuhilalpass ibnuhilalregistry
-    - docker push ibnuhilalregistry/kirito:latest
+    - docker login -u ibnuhilal -p ibnuhilal $docker_registry // ini saya pakai dockerhub punya saya 
+    - docker push ibnuhilal/kirito:latest
 
 deploy:
   stage: deploy
