@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kirito-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kirito
+  template:
+    metadata:
+      labels:
+        app: kirito
+    spec:
+      containers:
+      - name: kirito
+        image: ibnuhilalregistry/kirito:latest
+        ports:
+        - containerPort: 8080
