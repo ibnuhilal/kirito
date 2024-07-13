@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: kirito
-        image: ibnuhilalregistry/kirito:latest
+        image: ibnuhilal/kirito:latest
         ports:
         - containerPort: 8080
